@@ -1,0 +1,17 @@
+# Build y archivos generados por CMake
+build/
+cmake-build-*/
+
+# Binarios compilados
+**/bin/Debug/
+**/bin/Release/
+
+# Archivos temporales de JetBrains/CLion
+.idea/
+
+# Archivos temporales del sistema
+*.log
+*.tmp
+.DS_Store
+Thumbs.db
+
