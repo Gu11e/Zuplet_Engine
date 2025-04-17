@@ -1,6 +1,7 @@
 # Build y archivos generados por CMake
 build/
 cmake-build-*/
+bin/
 
 # Binarios compilados
 **/bin/Debug/
