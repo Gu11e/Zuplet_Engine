@@ -1,6 +1,8 @@
 #pragma once
 
-#include "Core.hpp"
+#include "Engine/Core.hpp"
+#include "Events/Event.hpp"
+
 
 namespace Engine
 {
