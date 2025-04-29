@@ -1,10 +1,8 @@
 #pragma once
 
+#include "enpch.hpp"
+
 #include "Engine/Core.hpp"
-
-#include <string>
-#include <functional>
-
 
 	enum class EventType
 	{
