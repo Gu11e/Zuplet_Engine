@@ -31,7 +31,7 @@ namespace Engine
         std::string ToString() const override
         {
             std::stringstream ss;
-            ss << "KeyPressedEvent: " << m_KeyCode;
+            ss << "KeyPressedEvent: " << m_KeyCode << " (repeats: " << m_RepeatCount << ")";
             return ss.str();
         }
 
