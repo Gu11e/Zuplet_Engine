@@ -6,6 +6,8 @@ add_library(Game_Engine SHARED
         src/Engine/Application.cpp
         src/Engine/Log.cpp
         src/Platform/Windows/WindowsWindow.cpp
+        src/Engine/Layer.cpp
+        src/Engine/LayerStack.cpp
 )
 
 target_precompile_headers(Game_Engine PRIVATE src/enpch.hpp src/enpch.cpp)
@@ -17,3 +19,8 @@ target_include_directories(Game_Engine PRIVATE ${CMAKE_CURRENT_SOURCE_DIR}/vendo
 target_include_directories(Game_Engine PRIVATE ${CMAKE_CURRENT_SOURCE_DIR}/src)
 
 target_compile_definitions(Game_Engine PRIVATE PLATFORM_WINDOWS BUILD_DLL ENABLE_ASSERTS)
+
+if(MSVC)
+    # Usa el runtime dinámico en Debug (/MDd) y Release (/MD)
+    set(CMAKE_MSVC_RUNTIME_LIBRARY "MultiThreadedDLL")
+endif()
