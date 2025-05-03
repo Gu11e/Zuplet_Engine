@@ -1,14 +1,16 @@
 #include "enpch.hpp"
+#include <glad/glad.h>
+
 #include "WindowsWindow.hpp"
 
 #include "Engine/Events/ApplicationEvent.hpp"
 #include "Engine/Events/KeyEvent.hpp"
 #include "Engine/Events/MouseEvent.hpp"
 
-
 namespace Engine
 {
     static bool s_GLFWInitialized = false;
+    static bool s_GladInitialized = false;
 
     static void GLFWErrorCallback(int error, const char* description)
     {
@@ -48,6 +50,8 @@ namespace Engine
 
         m_Window = glfwCreateWindow((int)props.Width, (int)props.Height, m_Data.Title.c_str(), nullptr, nullptr);
         glfwMakeContextCurrent(m_Window);
+        int status = gladLoadGLLoader((GLADloadproc)glfwGetProcAddress);
+        CORE_ASSERT(status, "Failed to initialize Glad!");
         glfwSetWindowUserPointer(m_Window, &m_Data);
         SetVSync(true);
 

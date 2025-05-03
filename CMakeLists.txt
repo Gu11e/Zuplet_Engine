@@ -8,3 +8,5 @@ add_subdirectory(Sandbox)
 
 set(GLFW_BUILD_DOCS OFF CACHE BOOL "Build the GLFW documentation")
 add_subdirectory(Game_Engine/vendor/GLFW)
+
+add_subdirectory(Game_Engine/vendor/Glad)
