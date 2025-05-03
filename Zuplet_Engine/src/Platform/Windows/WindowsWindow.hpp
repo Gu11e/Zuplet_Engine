@@ -4,9 +4,9 @@
 
 #include <GLFW/glfw3.h>
 
-namespace Engine
+namespace Zuplet
 {
-    class ENGINE_API WindowsWindow : public Window
+    class ZUPLET_API WindowsWindow : public Window
     {
     public:
         WindowsWindow(const WindowProps& props);

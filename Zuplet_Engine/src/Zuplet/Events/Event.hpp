@@ -3,7 +3,8 @@
 #include "enpch.hpp"
 
 #include "Engine/Core.hpp"
-
+namespace Zuplet
+{
 	enum class EventType
 	{
 		None = 0,
@@ -24,12 +25,12 @@
 	};
 
 #define EVENT_CLASS_TYPE(type) static EventType GetStaticType() { return EventType::type; }\
-								virtual EventType GetEventType() const override { return GetStaticType(); }\
-								virtual const char* GetName() const override { return #type; }
+virtual EventType GetEventType() const override { return GetStaticType(); }\
+virtual const char* GetName() const override { return #type; }
 
 #define EVENT_CLASS_CATEGORY(category) virtual int GetCategoryFlags() const override { return category; }
 
-	class ENGINE_API Event
+	class ZUPLET_API Event
 	{
 		friend class EventDispatcher;
 	public:
@@ -73,5 +74,4 @@
 	{
 		return os << e.ToString();
 	}
-
-
+}

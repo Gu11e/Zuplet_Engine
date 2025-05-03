@@ -4,7 +4,7 @@
 #include "Log.hpp"
 #include "glad/glad.h"
 
-namespace Engine
+namespace Zuplet
 {
 #define BIND_EVENT_FN(x) std::bind(&x, this, std::placeholders::_1)
 

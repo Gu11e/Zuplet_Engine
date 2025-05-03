@@ -4,9 +4,9 @@
 
 #include "Event.hpp"
 
-namespace Engine
+namespace Zuplet
 {
-    class ENGINE_API KeyEvent : public Event
+    class ZUPLET_API KeyEvent : public Event
     {
     public:
         inline int GetKeyCode() const { return m_KeyCode; }
@@ -20,7 +20,7 @@ namespace Engine
         int m_KeyCode;
     };
 
-    class ENGINE_API KeyPressedEvent : public KeyEvent
+    class ZUPLET_API KeyPressedEvent : public KeyEvent
     {
     public:
         KeyPressedEvent(int keycode, int repeatcount)
@@ -41,7 +41,7 @@ namespace Engine
         int m_RepeatCount;
     };
 
-    class ENGINE_API KeyReleasedEvent : public KeyEvent
+    class ZUPLET_API KeyReleasedEvent : public KeyEvent
     {
     public:
         KeyReleasedEvent(int keycode)

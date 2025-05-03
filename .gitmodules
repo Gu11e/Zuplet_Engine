@@ -1,0 +1,6 @@
+[submodule "Zuplet_Engine/vendor/GLFW"]
+	path = Zuplet_Engine/vendor/GLFW
+	url = https://github.com/glfw/glfw
+[submodule "Zuplet_Engine/vendor/spdlog"]
+	path = Zuplet_Engine/vendor/spdlog
+	url = https://github.com/gabime/spdlog

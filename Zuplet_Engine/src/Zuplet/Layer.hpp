@@ -4,9 +4,9 @@
 
 #include "Engine/Events/Event.hpp"
 
-namespace Engine
+namespace Zuplet
 {
-    class ENGINE_API Layer {
+    class ZUPLET_API Layer {
     public:
         Layer(const std::string& name = "Layer");
         virtual ~Layer();

@@ -1,6 +1,6 @@
 #include "LayerStack.hpp"
 
-namespace Engine
+namespace Zuplet
 {
     LayerStack::LayerStack()
     {

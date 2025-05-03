@@ -5,7 +5,7 @@
 #include "Engine/Core.hpp"
 #include "Engine/Events/Event.hpp"
 
-namespace Engine
+namespace Zuplet
 {
     struct WindowProps
     {
@@ -19,7 +19,7 @@ namespace Engine
         }
     };
 
-    class ENGINE_API Window
+    class ZUPLET_API Window
     {
     public:
         using EventCallbackfn = std::function<void(Event&)>;

@@ -7,9 +7,9 @@
 #include "Events/ApplicationEvent.hpp"
 #include "Engine/LayerStack.hpp"
 
-namespace Engine
+namespace Zuplet
 {
-    class ENGINE_API Application {
+    class ZUPLET_API Application {
     public:
         Application();
         ~Application();

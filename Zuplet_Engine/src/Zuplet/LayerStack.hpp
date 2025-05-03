@@ -5,9 +5,9 @@
 
 #include <vector>
 
-namespace Engine
+namespace Zuplet
 {
-    class ENGINE_API LayerStack {
+    class ZUPLET_API LayerStack {
     public:
         LayerStack();
         ~LayerStack();

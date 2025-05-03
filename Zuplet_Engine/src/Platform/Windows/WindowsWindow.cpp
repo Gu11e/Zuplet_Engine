@@ -7,14 +7,14 @@
 #include "Engine/Events/KeyEvent.hpp"
 #include "Engine/Events/MouseEvent.hpp"
 
-namespace Engine
+namespace Zuplet
 {
     static bool s_GLFWInitialized = false;
     static bool s_GladInitialized = false;
 
     static void GLFWErrorCallback(int error, const char* description)
     {
-        CORE_ERROR("GLFW Error: {0}: {1}", error, description);
+        ZP_CORE_ERROR("GLFW Error: {0}: {1}", error, description);
     }
 
     Window* Window::Create(const WindowProps& props)
@@ -38,12 +38,12 @@ namespace Engine
         m_Data.Width = props.Width;
         m_Data.Height = props.Height;
 
-        CORE_INFO("Creating window {0} ({1}, {2})", props.Title, props.Width, props.Height);
+        ZP_CORE_INFO("Creating window {0} ({1}, {2})", props.Title, props.Width, props.Height);
 
         if (!s_GLFWInitialized)
         {
             int success = glfwInit();
-            CORE_ASSERT(success, "Could not initialize GLFW!");
+            ZP_CORE_ASSERT(success, "Could not initialize GLFW!");
             glfwSetErrorCallback(GLFWErrorCallback);
             s_GLFWInitialized = true;
         }
@@ -51,7 +51,7 @@ namespace Engine
         m_Window = glfwCreateWindow((int)props.Width, (int)props.Height, m_Data.Title.c_str(), nullptr, nullptr);
         glfwMakeContextCurrent(m_Window);
         int status = gladLoadGLLoader((GLADloadproc)glfwGetProcAddress);
-        CORE_ASSERT(status, "Failed to initialize Glad!");
+        ZP_CORE_ASSERT(status, "Failed to initialize Glad!");
         glfwSetWindowUserPointer(m_Window, &m_Data);
         SetVSync(true);
 

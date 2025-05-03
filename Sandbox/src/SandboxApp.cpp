@@ -1,6 +1,6 @@
 #include <Engine.hpp>
 
-class ExampleLayer : public Engine::Layer
+class ExampleLayer : public Zuplet::Layer
 {
 public:
     ExampleLayer()
@@ -10,16 +10,16 @@ public:
 
     void OnUpdate() override
     {
-        APP_INFO("ExampleLayer::Update");
+        ZP_INFO("ExampleLayer::Update");
     }
 
     void OnEvent(Event& event) override
     {
-        APP_TRACE("{0}", event);
+        ZP_TRACE("{0}", event);
     }
 };
 
-class Sandbox : public Engine::Application
+class Sandbox : public Zuplet::Application
 {
 public:
     Sandbox()
@@ -33,7 +33,7 @@ public:
     }
 };
 
-Engine::Application* Engine::CreateApplication()
+Zuplet::Application* Zuplet::CreateApplication()
 {
     return new Sandbox();
 }
