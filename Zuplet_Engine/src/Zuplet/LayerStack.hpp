@@ -1,7 +1,7 @@
 #pragma once
 
-#include "Engine/Core.hpp"
-#include "Engine/Layer.hpp"
+#include "Zuplet/Core.hpp"
+#include "Zuplet/Layer.hpp"
 
 #include <vector>
 

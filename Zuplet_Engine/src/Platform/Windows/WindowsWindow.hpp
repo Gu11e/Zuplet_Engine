@@ -1,6 +1,6 @@
 #pragma once
 
-#include "Engine/Window.hpp"
+#include "Zuplet/Window.hpp"
 
 #include <GLFW/glfw3.h>
 

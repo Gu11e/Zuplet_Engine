@@ -2,8 +2,8 @@
 
 #include "enpch.hpp"
 
-#include "Engine/Core.hpp"
-#include "Engine/Events/Event.hpp"
+#include "Zuplet/Core.hpp"
+#include "Zuplet/Events/Event.hpp"
 
 namespace Zuplet
 {
@@ -13,7 +13,7 @@ namespace Zuplet
         unsigned int Width;
         unsigned int Height;
 
-        WindowProps(std::string title = "Engine Window", unsigned int width = 1280, unsigned int height = 720)
+        WindowProps(std::string title = "Zuplet Window", unsigned int width = 1280, unsigned int height = 720)
             : Title(title), Width(width), Height(height)
         {
         }

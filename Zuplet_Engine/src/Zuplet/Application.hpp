@@ -1,11 +1,11 @@
 #pragma once
 
-#include "Engine/Core.hpp"
+#include "Zuplet/Core.hpp"
 
-#include "Engine/Window.hpp"
-#include "Engine/Events/Event.hpp"
+#include "Zuplet/Window.hpp"
+#include "Zuplet/Events/Event.hpp"
 #include "Events/ApplicationEvent.hpp"
-#include "Engine/LayerStack.hpp"
+#include "Zuplet/LayerStack.hpp"
 
 namespace Zuplet
 {

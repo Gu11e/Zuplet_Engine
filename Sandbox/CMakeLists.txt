@@ -6,15 +6,15 @@ add_executable(Sandbox
         src/SandboxApp.cpp
 )
 
-target_link_libraries(Sandbox PRIVATE Game_Engine)
+target_link_libraries(Sandbox PRIVATE Zuplet_Engine)
 
 target_include_directories(Sandbox PRIVATE
-        ${CMAKE_SOURCE_DIR}/Game_Engine/src
+        ${CMAKE_SOURCE_DIR}/Zuplet_Engine/src
 )
 
 add_custom_command(TARGET Sandbox POST_BUILD
         COMMAND ${CMAKE_COMMAND} -E copy_if_different
-        $<TARGET_FILE:Game_Engine>
+        $<TARGET_FILE:Zuplet_Engine>
         $<TARGET_FILE_DIR:Sandbox>
 )
 

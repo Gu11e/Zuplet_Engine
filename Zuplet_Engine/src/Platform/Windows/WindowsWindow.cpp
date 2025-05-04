@@ -3,9 +3,9 @@
 
 #include "WindowsWindow.hpp"
 
-#include "Engine/Events/ApplicationEvent.hpp"
-#include "Engine/Events/KeyEvent.hpp"
-#include "Engine/Events/MouseEvent.hpp"
+#include "Zuplet/Events/ApplicationEvent.hpp"
+#include "Zuplet/Events/KeyEvent.hpp"
+#include "Zuplet/Events/MouseEvent.hpp"
 
 namespace Zuplet
 {

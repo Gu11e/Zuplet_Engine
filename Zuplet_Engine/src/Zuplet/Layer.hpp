@@ -1,8 +1,8 @@
 #pragma once
 
-#include "Engine/Core.hpp"
+#include "Zuplet/Core.hpp"
 
-#include "Engine/Events/Event.hpp"
+#include "Zuplet/Events/Event.hpp"
 
 namespace Zuplet
 {

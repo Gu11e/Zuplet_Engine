@@ -1,10 +1,10 @@
 #pragma once
 #include "Application.hpp"
-#include "Engine.hpp"
+#include "Zuplet.hpp"
 
 #ifdef PLATFORM_WINDOWS
 
-extern Zuplet::Application* Engine::CreateApplication();
+extern Zuplet::Application* Zuplet::CreateApplication();
 
 int main(int argc, char** argv)
 {

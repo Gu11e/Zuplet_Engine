@@ -1,4 +1,4 @@
-#include <Engine.hpp>
+#include <Zuplet.hpp>
 
 class ExampleLayer : public Zuplet::Layer
 {
@@ -13,7 +13,7 @@ public:
         ZP_INFO("ExampleLayer::Update");
     }
 
-    void OnEvent(Event& event) override
+    void OnEvent(Zuplet::Event& event) override
     {
         ZP_TRACE("{0}", event);
     }
