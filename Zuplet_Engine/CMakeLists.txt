@@ -1,3 +1,4 @@
+cmake_minimum_required(VERSION 3.31)
 project(Zuplet_Engine)
 
 set(CMAKE_RUNTIME_OUTPUT_DIRECTORY ${CMAKE_SOURCE_DIR}/bin/Zuplet_Engine/${CMAKE_BUILD_TYPE})
@@ -8,6 +9,9 @@ add_library(Zuplet_Engine SHARED
         src/Platform/Windows/WindowsWindow.cpp
         src/Zuplet/Layer.cpp
         src/Zuplet/LayerStack.cpp
+        src/Zuplet/ImGui/ImGuiLayer.cpp
+        src/Zuplet/ImGui/ImGuiLayer.hpp
+        src/Platform/OpenGL/ImGuiOpenGLRenderer.cpp
 )
 
 target_precompile_headers(Zuplet_Engine PRIVATE src/zppch.hpp src/zppch.cpp)

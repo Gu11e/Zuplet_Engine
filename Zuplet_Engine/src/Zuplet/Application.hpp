@@ -21,6 +21,9 @@ namespace Zuplet
         void PushLayer(Layer* layer);
         void PushOverlay(Layer* overlay);
 
+        inline static Application& Get() { return *s_Instance; }
+        inline Window& GetWindow() { return *m_Window; }
+
     private:
         bool OnWindowClosed(WindowCloseEvent& e);
 
@@ -28,6 +31,8 @@ namespace Zuplet
         bool m_Running = true;
 
         LayerStack m_LayerStack;
+
+        static Application* s_Instance;
     };
 
     // definida en un cliente

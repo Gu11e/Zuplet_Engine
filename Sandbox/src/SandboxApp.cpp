@@ -1,4 +1,5 @@
 #include <Zuplet.hpp>
+#include "Zuplet/ImGui/ImGuiLayer.hpp"
 
 class ExampleLayer : public Zuplet::Layer
 {
@@ -25,6 +26,7 @@ public:
     Sandbox()
     {
         PushLayer(new ExampleLayer());
+        PushLayer(new Zuplet::ImGuiLayer());
     }
 
     ~Sandbox()
