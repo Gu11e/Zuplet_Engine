@@ -4,3 +4,6 @@
 [submodule "Zuplet_Engine/vendor/spdlog"]
 	path = Zuplet_Engine/vendor/spdlog
 	url = https://github.com/gabime/spdlog
+[submodule "Zuplet_Engine/vendor/imgui"]
+	path = Zuplet_Engine/vendor/imgui
+	url = https://github.com/TheCherno/imgui
