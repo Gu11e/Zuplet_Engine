@@ -12,6 +12,11 @@ add_library(Zuplet_Engine SHARED
         src/Zuplet/ImGui/ImGuiLayer.cpp
         src/Zuplet/ImGui/ImGuiLayer.hpp
         src/Platform/OpenGL/ImGuiOpenGLRenderer.cpp
+        src/Zuplet/Input.hpp
+        src/Platform/Windows/WindowsInput.cpp
+        src/Platform/Windows/WindowsInput.hpp
+        src/Zuplet/KeyCodes.hpp
+        src/Zuplet/MouseButtonCodes.hpp
 )
 
 target_precompile_headers(Zuplet_Engine PRIVATE src/zppch.hpp src/zppch.cpp)

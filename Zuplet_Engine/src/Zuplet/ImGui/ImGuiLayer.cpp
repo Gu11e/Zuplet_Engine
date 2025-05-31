@@ -123,8 +123,8 @@ namespace Zuplet
     bool ImGuiLayer::OnMouseScrolledEvent(MouseScrolledEvent& e)
     {
         ImGuiIO& io = ImGui::GetIO();
-        io.MouseWheel += e.GetXOffset();
-        io.MouseWheelH += e.GetYOffset();
+        io.MouseWheelH += e.GetXOffset();
+        io.MouseWheel += e.GetYOffset();
 
         return false;
     }

@@ -11,7 +11,7 @@ public:
 
     void OnUpdate() override
     {
-        ZP_INFO("ExampleLayer::Update");
+        // ZP_INFO("ExampleLayer::Update");
     }
 
     void OnEvent(Zuplet::Event& event) override
