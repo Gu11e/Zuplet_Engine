@@ -10,6 +10,7 @@ target_link_libraries(Sandbox PRIVATE Zuplet_Engine)
 
 target_include_directories(Sandbox PRIVATE
         ${CMAKE_SOURCE_DIR}/Zuplet_Engine/src
+        ${CMAKE_SOURCE_DIR}/Zuplet_Engine/vendor/glm
 )
 
 add_custom_command(TARGET Sandbox POST_BUILD

@@ -4,7 +4,7 @@
 #include "Log.hpp"
 #include "glad/glad.h"
 
-#include "Platform/Windows/WindowsInput.hpp"
+#include "Zuplet/Input.hpp"
 
 namespace Zuplet
 {

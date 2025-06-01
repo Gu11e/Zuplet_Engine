@@ -13,3 +13,5 @@ add_subdirectory(Zuplet_Engine/vendor/GLFW)
 add_subdirectory(Zuplet_Engine/vendor/Glad)
 
 add_subdirectory(Zuplet_Engine/vendor/imgui)
+
+add_subdirectory(Zuplet_Engine/vendor/glm)

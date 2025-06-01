@@ -21,12 +21,13 @@ add_library(Zuplet_Engine SHARED
 
 target_precompile_headers(Zuplet_Engine PRIVATE src/zppch.hpp src/zppch.cpp)
 
-target_link_libraries(Zuplet_Engine PRIVATE glfw Glad imgui opengl32.lib)
+target_link_libraries(Zuplet_Engine PRIVATE glfw Glad imgui glm opengl32.lib)
 
 target_include_directories(Zuplet_Engine PUBLIC ${CMAKE_CURRENT_SOURCE_DIR}/vendor/spdlog/include)
 target_include_directories(Zuplet_Engine PRIVATE ${CMAKE_CURRENT_SOURCE_DIR}/vendor/GLFW/include)
 target_include_directories(Zuplet_Engine PRIVATE ${CMAKE_CURRENT_SOURCE_DIR}/vendor/Glad/include)
 target_include_directories(Zuplet_Engine PRIVATE ${CMAKE_CURRENT_SOURCE_DIR}/vendor/imgui)
+target_include_directories(Zuplet_Engine PRIVATE ${CMAKE_CURRENT_SOURCE_DIR}/vendor/glm)
 target_include_directories(Zuplet_Engine PRIVATE ${CMAKE_CURRENT_SOURCE_DIR}/src)
 
 target_compile_definitions(Zuplet_Engine PRIVATE PLATFORM_WINDOWS BUILD_DLL ENABLE_ASSERTS GLFW_INCLUDE_NONE)

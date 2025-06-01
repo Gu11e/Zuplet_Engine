@@ -7,3 +7,6 @@
 [submodule "Zuplet_Engine/vendor/imgui"]
 	path = Zuplet_Engine/vendor/imgui
 	url = https://github.com/TheCherno/imgui
+[submodule "Zuplet_Engine/vendor/glm"]
+	path = Zuplet_Engine/vendor/glm
+	url = https://github.com/g-truc/glm
